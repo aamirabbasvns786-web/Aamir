@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#090615" />
+  <title>AI Camra — Capture · Share · Explore</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="desktop-rail">
+      <div class="brand"><span class="brand-icon">📸</span><span>AI <b>Camra</b></span></div>
+      <button class="rail-link active" data-page="home">⌂ <span>Home</span></button>
+      <button class="rail-link" data-page="chat">✉ <span>Messages</span></button>
+      <button class="rail-link" data-page="camera">◉ <span>Camera</span></button>
+      <button class="rail-link" data-page="reels">▣ <span>Reels</span></button>
+      <button class="rail-link" data-page="shop">♧ <span>Shop</span></button>
+      <button class="rail-link" data-page="ai">✦ <span>AI Studio</span></button>
+      <div class="rail-bottom"><button class="rail-link" data-page="settings">⚙ <span>Settings</span></button><div class="rail-profile"><div class="avatar">S</div><div><b id="railName">Your profile</b><small id="railHandle">@yourname</small></div></div></div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div class="brand mobile-brand"><span class="brand-icon">📸</span><span>AI <b>Camra</b></span></div>
+        <div class="search"><span>⌕</span><input id="globalSearch" placeholder="Search people, filters, products..." /></div>
+        <div class="top-actions"><button class="icon-btn" title="Notifications" id="notifications">♧<i></i></button><button class="profile-chip" id="profileOpen"><span class="avatar small">S</span><span id="topName">Your profile</span><span>⌄</span></button></div>
+      </header>
+
+      <section class="page active" id="page-home">
+        <div class="welcome-row"><div><p class="eyebrow">YOUR WORLD, IN YOUR LENS</p><h1>Make a little <span>magic.</span></h1><p class="muted">Capture the moment. Add your AI touch. Share it with your people.</p></div><button class="primary compact" data-go="camera">＋ Create snap</button></div>
+        <div class="stories" id="stories">
+          <button class="story add-story" data-go="camera"><span class="story-ring add-ring">＋</span><small>Your story</small></button>
+          <button class="story"><span class="story-ring"><span class="avatar">A</span></span><small>Ananya</small></button>
+          <button class="story"><span class="story-ring"><span class="avatar coral">R</span></span><small>Rohan</small></button>
+          <button class="story"><span class="story-ring"><span class="avatar blue">M</span></span><small>Meera</small></button>
+          <button class="story"><span class="story-ring"><span class="avatar gold">K</span></span><small>Kabir</small></button>
+          <button class="story"><span class="story-ring"><span class="avatar green">P</span></span><small>Priya</small></button>
+          <button class="story"><span class="story-ring"><span class="avatar pink">J</span></span><small>Jia</small></button>
+        </div>
+        <div class="content-grid">
+          <div class="feed-column">
+            <article class="post card">
+              <div class="post-head"><div class="avatar">A</div><div><b>Ananya Sharma</b><small>@ananya.frames · 12 min ago</small></div><button class="more">···</button></div>
+              <div class="post-art art-sunset"><div class="sun"></div><div class="mountain m1"></div><div class="mountain m2"></div><div class="art-label">chasing golden hours <span>✦ AI COLOR</span></div></div>
+              <div class="post-actions"><button class="like">♡ <span>2.4k</span></button><button>▢ <span>182</span></button><button>↗ <span>Share</span></button><button class="save">♧</button></div>
+              <p class="caption"><b>@ananya.frames</b> A little sunset therapy. 🌅 <span class="hashtag">#GoldenHour #CamraMood</span></p>
+            </article>
+            <article class="post card">
+              <div class="post-head"><div class="avatar coral">R</div><div><b>Rohan Kumar</b><small>@roh.capture · 38 min ago</small></div><button class="more">···</button></div>
+              <div class="post-art art-night"><div class="moon"></div><div class="cityline"></div><div class="art-label">after hours <span>✦ NEON GLOW</span></div></div>
+              <div class="post-actions"><button class="like">♡ <span>876</span></button><button>▢ <span>46</span></button><button>↗ <span>Share</span></button><button class="save">♧</button></div>
+              <p class="caption"><b>@roh.capture</b> City lights hit different. <span class="hashtag">#NightFrames</span></p>
+            </article>
+          </div>
+          <aside class="right-column">
+            <div class="card mini-profile"><div class="profile-cover"></div><div class="profile-info"><div class="avatar profile-big">S</div><h3 id="profileName">Your profile</h3><p id="profileTag">@yourname</p><div class="stats"><div><b>0</b><small>Snaps</small></div><div><b>0</b><small>Friends</small></div><div><b>0</b><small>Following</small></div></div><button class="outline full" data-go="settings">Edit profile</button></div></div>
+            <div class="card suggestion"><div class="section-title"><b>People to discover</b><button class="text-btn">See all</button></div><div class="suggestion-row"><div class="avatar pink">M</div><div><b>Meera Kapoor</b><small>@meerainmotion</small></div><button class="follow">Follow</button></div><div class="suggestion-row"><div class="avatar blue">K</div><div><b>Kabir Verma</b><small>@kabir.visuals</small></div><button class="follow">Follow</button></div><div class="suggestion-row"><div class="avatar green">P</div><div><b>Priya Singh</b><small>@priya.jpg</small></div><button class="follow">Follow</button></div></div>
+            <div class="ai-banner"><span class="sparkle">✦</span><p class="eyebrow">AI STUDIO</p><h3>Your next look<br>is one tap away.</h3><button class="white-btn" data-go="ai">Explore AI tools ↗</button></div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="page" id="page-camera">
+        <div class="page-heading"><div><p class="eyebrow">YOUR CREATIVE SPACE</p><h1>Camera <span>studio.</span></h1><p class="muted">Pick a filter, capture a moment, make it yours.</p></div><span class="live-pill"><i></i> CAMERA READY</span></div>
+        <div class="camera-layout"><div class="camera-frame"><video id="cameraVideo" autoplay playsinline muted></video><div class="camera-placeholder" id="cameraPlaceholder"><div class="camera-orb">📸</div><h2>Your next favorite photo starts here.</h2><p>Enable camera access to preview yourself, or try the demo preview.</p><button class="primary" id="startCamera">Enable camera</button><button class="subtle-btn" id="demoCamera">Use demo preview</button></div><div class="camera-top"><button id="closeCamera" class="camera-icon">×</button><span class="camera-mode">AI CAMRA <i>•</i> PHOTO</span><button class="camera-icon" id="flipCamera">⟳</button></div><div class="camera-bottom"><button class="camera-tool" id="uploadPhoto">▧<small>Gallery</small></button><button class="shutter" id="capturePhoto"><span></span></button><button class="camera-tool" id="timerButton">◷<small>Timer</small></button></div><canvas id="captureCanvas" hidden></canvas></div>
+          <div class="filter-panel card"><div class="section-title"><div><p class="eyebrow">LIVE EFFECTS</p><h2>Choose your vibe</h2></div><span class="filter-count">08 FILTERS</span></div><div class="filter-grid">
+            <button class="filter-option selected" data-filter="none"><span class="filter-preview normal">Aa</span><b>Original</b><small>Natural</small></button>
+            <button class="filter-option" data-filter="beauty"><span class="filter-preview beauty">✧</span><b>Beauty</b><small>Soft glow</small></button>
+            <button class="filter-option" data-filter="vintage"><span class="filter-preview vintage">70s</span><b>Vintage</b><small>Warm film</small></button>
+            <button class="filter-option" data-filter="mono"><span class="filter-preview mono">B&W</span><b>Mono</b><small>Classic</small></button>
+            <button class="filter-option" data-filter="dreamy"><span class="filter-preview dreamy">✦</span><b>Dreamy</b><small>Soft focus</small></button>
+            <button class="filter-option" data-filter="neon"><span class="filter-preview neon">NEON</span><b>Neon</b><small>Night pop</small></button>
+            <button class="filter-option" data-filter="sunset"><span class="filter-preview sunset">☼</span><b>Sunset</b><small>Golden hour</small></button>
+            <button class="filter-option" data-filter="cool"><span class="filter-preview cool">ICE</span><b>Arctic</b><small>Cool tone</small></button>
+          </div><div class="filter-note"><span>✦</span><div><b>AI-powered effects</b><p>These starter filters use CSS/video effects. Connect an AI inference API for face-aware effects.</p></div></div></div></div>
+      </section>
+
+      <section class="page" id="page-chat"><div class="page-heading"><div><p class="eyebrow">STAY CLOSE</p><h1>Your <span>messages.</span></h1><p class="muted">Chat, react, and send a snap to your people.</p></div><button class="primary compact" id="newMessage">＋ New message</button></div><div class="chat-layout card"><div class="chat-list"><div class="search chat-search">⌕ <input placeholder="Search messages..." /></div><button class="chat-person active"><div class="avatar">A</div><div><b>Ananya Sharma</b><small>That filter looks amazing ✨</small></div><time>2m</time></button><button class="chat-person"><div class="avatar coral">R</div><div><b>Rohan Kumar</b><small>Sent you a snap 📸</small></div><time>18m</time></button><button class="chat-person"><div class="avatar blue">M</div><div><b>Meera Kapoor</b><small>Are we going today?</small></div><time>1h</time></button><button class="chat-person"><div class="avatar green">J</div><div><b>JMI Friends ✨</b><small>You: See you soon!</small></div><time>3h</time></button></div><div class="chat-conversation"><div class="conversation-head"><div class="avatar">A</div><div><b>Ananya Sharma</b><small><i class="online-dot"></i> Active now</small></div><button class="more">···</button></div><div class="messages" id="messages"><div class="day-label">TODAY</div><div class="bubble received">Hey! Did you try the new AI filters? <small>10:41 AM</small></div><div class="bubble sent">Just tried them — the dreamy one is ✨ <small>10:42 AM</small></div><div class="snap-bubble">▣ <div><b>Snap received</b><small>Tap to view · 1 replay left</small></div></div></div><form id="messageForm" class="message-compose"><button type="button" data-go="camera">▣</button><input id="messageInput" placeholder="Write a message..." autocomplete="off"/><button class="send-btn" type="submit">➤</button></form></div></div></section>
+
+      <section class="page" id="page-reels"><div class="page-heading"><div><p class="eyebrow">QUICK STORIES, BIG FEELINGS</p><h1>Discover <span>reels.</span></h1><p class="muted">A vertical-first feed for your favorite short videos.</p></div><button class="primary compact" data-go="camera">＋ Create reel</button></div><div class="reels-grid"><article class="reel-card reel-one"><span class="reel-play">▶</span><span class="reel-tag">TRENDING · 00:18</span><div><b>Golden hour diaries</b><small>@ananya.frames · ♡ 12.8k</small></div></article><article class="reel-card reel-two"><span class="reel-play">▶</span><span class="reel-tag">AI LOOK · 00:12</span><div><b>One tap, new vibe</b><small>@meerainmotion · ♡ 8.2k</small></div></article><article class="reel-card reel-three"><span class="reel-play">▶</span><span class="reel-tag">CAMPUS LIFE · 00:24</span><div><b>Little moments</b><small>@kabir.visuals · ♡ 4.6k</small></div></article><article class="reel-card reel-four"><span class="reel-play">▶</span><span class="reel-tag">NIGHT MODE · 00:15</span><div><b>After dark</b><small>@roh.capture · ♡ 3.1k</small></div></article></div></section>
+
+      <section class="page" id="page-shop"><div class="page-heading"><div><p class="eyebrow">CURATED FOR YOUR CREATIVE LIFE</p><h1>The Camra <span>shop.</span></h1><p class="muted">Creator gear, accessories, and your next favorite find.</p></div><button class="outline compact" id="cartButton">♧ Cart <span id="cartCount">0</span></button></div><div class="shop-categories"><button class="category active">Everything</button><button class="category">Tech</button><button class="category">Fashion</button><button class="category">Creator gear</button><button class="category">Beauty</button></div><div class="products-grid"><article class="product card"><div class="product-art headphones">♫</div><div class="product-info"><small>CREATOR TECH</small><h3>Studio headphones</h3><p>Immersive sound, clean design.</p><div class="price-row"><b>₹2,499</b><button class="add-cart">＋ Add</button></div></div></article><article class="product card"><div class="product-art camera-product">📷</div><div class="product-info"><small>CAMRA ESSENTIALS</small><h3>Mini creator camera</h3><p>Small gear, big perspective.</p><div class="price-row"><b>₹5,999</b><button class="add-cart">＋ Add</button></div></div></article><article class="product card"><div class="product-art sneakers">◒</div><div class="product-info"><small>EVERYDAY STYLE</small><h3>Cloud sneakers</h3><p>Made for all-day exploring.</p><div class="price-row"><b>₹1,499</b><button class="add-cart">＋ Add</button></div></div></article><article class="product card"><div class="product-art watch">◷</div><div class="product-info"><small>SMART LIVING</small><h3>Pulse smart watch</h3><p>Stay in your own rhythm.</p><div class="price-row"><b>₹3,999</b><button class="add-cart">＋ Add</button></div></div></article></div></section>
+
+      <section class="page" id="page-ai"><div class="page-heading"><div><p class="eyebrow">CREATIVITY, AMPLIFIED</p><h1>AI <span>studio.</span></h1><p class="muted">A collection of tools for the ideas in your head.</p></div><span class="live-pill purple-pill">✦ POWERED BY AI</span></div><div class="ai-tools-grid"><button class="tool-card" data-tool="AI Filters"><span class="tool-icon">◉</span><span class="tool-label">PHOTO EFFECTS</span><h2>AI Filters</h2><p>Give your photo a whole new mood.</p><span class="tool-arrow">↗</span></button><button class="tool-card" data-tool="Background Remover"><span class="tool-icon">▧</span><span class="tool-label">CLEAN CUTS</span><h2>Background remover</h2><p>Make the subject the whole story.</p><span class="tool-arrow">↗</span></button><button class="tool-card" data-tool="Image Enhancer"><span class="tool-icon">✧</span><span class="tool-label">DETAIL BOOST</span><h2>Image enhancer</h2><p>Bring more clarity to every frame.</p><span class="tool-arrow">↗</span></button><button class="tool-card" data-tool="AI Style"><span class="tool-icon">✺</span><span class="tool-label">NEW PERSPECTIVE</span><h2>AI style transfer</h2><p>Explore art styles and creative looks.</p><span class="tool-arrow">↗</span></button><button class="tool-card" data-tool="Text to Image"><span class="tool-icon">✎</span><span class="tool-label">IMAGINE IT</span><h2>Text to image</h2><p>Turn a thought into a visual direction.</p><span class="tool-arrow">↗</span></button><button class="tool-card gradient-tool" data-tool="Magic Cleanup"><span class="tool-icon">✦</span><span class="tool-label">THE LITTLE MAGIC</span><h2>Magic cleanup</h2><p>Make distractions disappear.</p><span class="tool-arrow">↗</span></button></div></section>
+
+      <section class="page" id="page-settings"><div class="page-heading"><div><p class="eyebrow">MAKE IT YOURS</p><h1>Your <span>settings.</span></h1><p class="muted">Manage your profile, privacy, and app experience.</p></div></div><div class="settings-layout"><div class="card settings-profile"><div class="avatar profile-big">S</div><div><h2 id="settingsName">Your profile</h2><p id="settingsTag">@yourname</p><button class="text-btn" id="editProfile">Edit profile details ↗</button></div></div><div class="card settings-list"><h3>Account & preferences</h3><button class="setting-row" id="editName"><span class="setting-icon">♙</span><span><b>Display name</b><small>Change how people see you</small></span><strong id="settingNameValue">Your profile</strong><span>›</span></button><button class="setting-row" id="editUsername"><span class="setting-icon">＠</span><span><b>Username</b><small>Your unique Camra ID</small></span><strong id="settingHandleValue">@yourname</strong><span>›</span></button><button class="setting-row" id="locationToggle"><span class="setting-icon">⌖</span><span><b>Location services</b><small>Only access location when you choose</small></span><strong id="locationStatus">Off</strong><span>›</span></button><button class="setting-row" id="notificationsToggle"><span class="setting-icon">♧</span><span><b>Notifications</b><small>Activity, messages, and friend requests</small></span><strong id="notificationStatus">On</strong><span>›</span></button><button class="setting-row" id="themeToggle"><span class="setting-icon">☾</span><span><b>Appearance</b><small>Personalize your app look</small></span><strong>Dark mode</strong><span>›</span></button><button class="setting-row" id="privacyInfo"><span class="setting-icon">◇</span><span><b>Privacy & data</b><small>Review what is stored and why</small></span><span>›</span></button><button class="setting-row" id="logout"><span class="setting-icon">↪</span><span><b>Sign out</b><small>Leave this device</small></span><span>›</span></button></div><p class="footnote">AI Camra concept build · Frontend demo. Account, OTP, messaging, shop checkout, and database persistence need backend configuration.</p></div></section>
+    </main>
+    <nav class="mobile-nav"><button class="active" data-page="home"><span>⌂</span><small>Home</small></button><button data-page="chat"><span>✉</span><small>Chat</small></button><button class="camera-nav" data-page="camera"><span>◉</span><small>Camra</small></button><button data-page="reels"><span>▣</span><small>Reels</small></button><button data-page="shop"><span>♧</span><small>Shop</small></button></nav>
+  </div>
+
+  <div class="toast" id="toast" role="status"></div>
+  <div class="modal-backdrop" id="modalBackdrop"><div class="modal card"><button class="modal-close" id="modalClose">×</button><div id="modalContent"></div></div></div>
+  <script src="app.js"></script>
+</body>
+  </html>
